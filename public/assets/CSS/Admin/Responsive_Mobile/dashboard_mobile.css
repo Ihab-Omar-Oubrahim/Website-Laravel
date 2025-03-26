@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+.container_mobile {
+    display: none;
+    border: 1px solid rgba(54, 53, 53, 0.281);
+}
+
+.mobile_info_container,
+.user_mobile_items,
+.mobile_dashboard_container,
+.mobile_sub_and_info {
+    border: 1px solid rgba(102, 98, 98, 0.281);
+    background: rgba(102, 98, 98, 0.281);
+    padding: 6px;
+}
+
+.dashboard_mobile_logo img {
+    width: 100%;
+    height: auto;
+}
+
+.mobile_dashboard_container {
+    margin-top: 20px;
+}
+
+
+/* dashes */
+
+.mobile_dashes {
+    padding: 2px;
+}
+
+.mobile_dash_info,
+.mobile_subs,
+.mobile_notes {
+    border: 1px solid rgba(34, 32, 32, 0.281);
+    background: rgba(34, 32, 32, 0.281);
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.mobile_dash_img_con {
+    margin: auto;
+    width: 48px;
+    height: auto;
+}
+
+.mobile_dash_img_con img {
+    width: 100%;
+    height: auto;
+}
+
+.mobile_dash_content h3,
+p,
+span {
+    text-align: center;
+    font-family: "Chakra Petch", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.mobile_dash_content h3 {
+    font-weight: 600;
+    color: rgb(202, 204, 72);
+}
+
+/* sub and info mobile */
+
+.mobile_sub_note_img_con{
+    margin: auto;
+    width: 55px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.mobile_sub_note_img_con img{
+    width: 100%;
+    height: auto;
+}
+.mobile_sub_note_info h2{
+    text-align: center;
+    font-family: "Chakra Petch", serif;
+    font-weight: 600;
+    font-style: normal;
+    color: rgb(202, 204, 72);
+}
+
+.mobile_sub_notes_details_con{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mobile_sub_and_info .details-button{
+    width: 80%;
+    font-family: "Chakra Petch", serif;
+    font-size: 14px;
+}
+
+.mobile_sub_and_info{
+    margin-bottom: 15px;
+}
+
+/* dash board footer desk */
+
+#mobile_dashboard_desc{
+    text-align: center;
+    font-family: "Chakra Petch", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/* hovers transitions */
+
+.mobile_dash_info{
+    transition: .24s;
+}
+.mobile_dash_info:hover{
+    cursor: pointer;
+    background: rgba(90, 87, 87, 0.281);
+    transform: scale(1.05);
+}
+
+.mobile_dash_info:active{
+    transform: scale(0.9);
+}

@@ -1,0 +1,119 @@
+/* General button styling */
+.dashboard-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    color: white;
+}
+
+/* Hover effect - Slightly enlarge */
+.dashboard-btn:hover {
+    transform: scale(1.08);
+}
+
+/* Active effect - Shrink when clicked */
+.dashboard-btn:active {
+    transform: scale(0.9);
+}
+
+/* Save button */
+.save-btn {
+    background-color: #acbe5b;
+}
+
+.save-btn:hover {
+    background-color: #8a9436;
+}
+
+.staff-btn {
+    background-color: #e7cf81;
+    color: black;
+}
+
+.staff-btn:hover {
+    background-color: #ceba79;
+}
+
+.staff-btn i {
+    color: black;
+}
+
+/* Print button (disabled) */
+.print-btn {
+    background-color: #6c757d;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+/* Delete button */
+.delete-btn {
+    background-color: #dc3545;
+}
+
+.delete-btn:hover {
+    background-color: #c82333;
+}
+
+/* Edit Credentials Button */
+.edit-credentials-btn {
+    background-color: #436080;
+}
+
+.edit-credentials-btn:hover {
+    background-color: #293b4e;
+}
+
+/* Hover & Click Effects */
+.dashboard-btn:hover {
+    transform: scale(1.08);
+}
+
+.dashboard-btn:active {
+    transform: scale(0.9);
+}
+
+
+
+
+
+/* Responsive: Stack buttons on smaller screens */
+@media (max-width: 740px){
+    .staff-btn{
+        width: 100% !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .Dashboard_Options {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dashboard-btn {
+        width: 80%;
+        text-align: center;
+    }
+
+    .important_info_options{
+        width: 100%;
+        padding: 0px;
+    }
+
+}
+
+@media (max-width: 400px) {
+    .edit-credentials-btn{
+        width: 100%;
+    }
+
+}

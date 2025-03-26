@@ -1,0 +1,56 @@
+.reportcomment_row_user_name p{
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0;
+    color: #e0d96b;
+}
+
+.reportcomment_row_user_id p{
+    color: #7e773e;
+    margin: 0;
+}
+
+.dashboard_row_view,
+.reportcomment_row_id,
+.reportcomment_row_user_name,
+.reportcomment_row_user_id {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Report_Info{
+    color: #e0d96b;
+    margin-top: 10px;
+}
+
+/* popupcontainer for reports */
+
+.popup{
+    max-height: 275px;
+    padding: 14px;
+    overflow-y: auto;
+}
+
+.popup::-webkit-scrollbar {
+    width: 4px;
+    transition: .34s;
+}
+
+.popup::-webkit-scrollbar-track {
+    background: #292828;
+}
+
+.popup::-webkit-scrollbar-thumb {
+    background-color: #e2e474;
+    border-radius: 10px;
+}
+
+.popup::-webkit-scrollbar-thumb:hover {
+    background-color: #cacc4d;
+}
+
+.logo{
+    border-radius: 0px;
+}

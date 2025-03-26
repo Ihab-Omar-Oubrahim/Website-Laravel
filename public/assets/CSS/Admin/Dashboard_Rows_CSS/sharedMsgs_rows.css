@@ -1,0 +1,21 @@
+.sharedmsg_row_user_name p{
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0;
+    color: #e0d96b;
+}
+
+.sharedmsg_row_user_id p{
+    color: #7e773e;
+    margin: 0;
+}
+
+.dashboard_row_view,
+.sharedmsg_row_id,
+.sharedmsg_row_user_name,
+.sharedmsg_row_user_id {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

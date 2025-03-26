@@ -1,0 +1,133 @@
+.Users_Row_Container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.Users_Row {
+    border: 1px solid rgba(102, 98, 98, 0.281);
+    background: rgba(51, 50, 50, 0.281);
+    border-radius: 2px;
+    padding: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 210px;
+    min-height: 230px;
+}
+
+/* Hide the default checkbox */
+.edit_checkbox {
+    display: none;
+}
+
+/* Custom checkbox styling */
+.custom_checkbox {
+    width: 26px;
+    height: 26px;
+    border: 2px solid #555;
+    background: rgb(54, 53, 53);
+    display: inline-block;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.2s ease-in-out;
+}
+
+/* Checkbox checked state */
+.edit_checkbox:checked + .custom_checkbox {
+    background-color: rgb(190, 172, 68); /* Change this color if needed */
+    border-color: rgb(85, 90, 8);
+}
+
+/* Checkbox tick (optional) */
+.edit_checkbox:checked + .custom_checkbox::after {
+    content: "✔";
+    font-size: 18px;
+    color: rgb(42, 108, 128);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+}
+
+.Empty_Visitors{
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.Empty_Visitors p{
+    text-align: center;
+    font-size: 24px;
+}
+
+.users_img{
+    margin: auto;
+    width: 64px;
+    margin-top: 8px;
+    margin-bottom: 10px;
+}
+.users_img img {
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+#users_name{
+    color: rgb(211, 199, 90);
+    font-size: 21px;
+    font-weight: 600;
+}
+#users_id{
+    color: rgb(151, 142, 62);
+    font-size: 10px;
+}
+.users_line{
+    margin: auto;
+    width: 85%;
+    border: none;
+    border-top: 2px solid rgb(151, 142, 62);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#users_ip{
+    color: rgb(211, 199, 90);
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.logo{
+    border-radius: 0px;
+}
+
+.users_view_details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 18px;
+}
+
+.users_details_button{
+    width: 75%;
+    height: 30px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: .18s;
+    background: rgb(134, 139, 58);
+    color: #ffffff;
+    font-size: 17px;
+    outline: none;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.users_details_button:hover{
+    background: rgb(154, 160, 79);
+    transform: scale(1.0975);
+}
+.users_details_button:active{
+    background: rgb(201, 207, 115);
+    transform: scale(0.9);
+}

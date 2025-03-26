@@ -1,0 +1,464 @@
+.contact_container {
+    border: 1px solid rgba(102, 98, 98, 0.281);
+    background: rgba(102, 98, 98, 0.281);
+    padding: 10px;
+    overflow-y: auto;
+    overflow-x: none;
+    height: 100%;
+}
+
+.main-content{
+    height: 100vh;
+    padding-bottom: 75px !important;
+}
+
+.contact_container::-webkit-scrollbar {
+    width: 4px;
+}
+
+.contact_container::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, rgb(151, 142, 15), rgb(224, 181, 37));
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.contact_container::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(to bottom, rgb(151, 142, 15), rgb(224, 181, 37, 0.9));
+}
+
+
+.contacts_header {
+    border: 1px solid rgba(102, 98, 98, 0.281);
+    background: rgba(51, 50, 50, 0.281);
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+.contacts_header-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+.contacts_header-info .header-title {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #dee062;
+    transition: color 0.3s;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.contacts_header-info .header-description {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    font-size: 0.9rem;
+    color: #fff;
+}
+
+.contacts_header-right .search-bar {
+    width: 250px;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    transition: box-shadow 0.3s ease, border-color 0.3s ease;
+    background-color: #353434a4;
+}
+
+.search-bar::placeholder {
+    color: #999;
+}
+
+.search-bar:focus {
+    box-shadow: 0 0 8px rgba(229, 255, 0, 0.4);
+    border-color: #b0b92e;
+}
+
+
+/* body */
+
+
+
+
+/* Body container */
+.contacts_body {
+    border: 1px solid rgba(102, 98, 98, 0.281);
+    background: rgba(51, 50, 50, 0.281);
+    border-radius: 4px;
+    padding: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 16px;
+    margin-bottom: 16px;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts_body::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+.contact_item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+    padding: 5px;
+    margin-bottom: 8px;
+    border: 1px solid rgba(102, 98, 98, 0.281);
+    background: rgba(29, 28, 28, 0.479);
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    min-width: 900px;
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.contact_item > * {
+    flex-shrink: 0;
+}
+
+.contact_edit .edit_checkbox {
+    cursor: pointer;
+    width: 18px;
+    height: 18px;
+}
+
+.contact_user_pfp img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.contact_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 120px;
+}
+
+.contact_name {
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0;
+    color: #e0d96b;
+}
+
+.contact_id {
+    font-size: 0.8rem;
+    color: #464117;
+    margin: 0;
+}
+
+.contact_phone p {
+    margin: 0;
+    color: #ffffff;
+    font-size: 0.9rem;
+    white-space: nowrap;
+}
+
+
+.contact_attachment img {
+    width: 32px;
+    height: 32px;
+}
+
+.contact_row_id {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #e0d96b;
+    margin-left: 8px;
+    min-width: 30px;
+    text-align: center;
+}
+
+.contact_view .view_button {
+    padding: 6px 12px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #fff;
+    background-color: #c8ca51;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.contact_view .view_button:hover {
+    background-color: #7b8334;
+    transform: scale(1.05);
+}
+
+.contact_view .view_button:active {
+    background-color: #b7ca0f;
+    transform: scale(0.98);
+}
+
+.Attachment_Info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.contacts_header-right {
+    padding: 3px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.search-btn {
+    padding: 8px 16px;
+    font-size: 14px;
+    background-color: #a8a75a;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: .24s;
+    height: 45px;
+}
+
+.search-icon {
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
+}
+
+.search-btn:hover {
+    background-color: #888f4e;
+    transform: scale(1.05);
+}
+
+.search-btn:active {
+    transform: scale(0.9);
+    background-color: #43462f;
+}
+
+.Selections_Options {
+    border: 1px solid rgba(102, 98, 98, 0.281);
+    background: rgba(51, 50, 50, 0.281);
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 15px;
+}
+
+.select-all {
+    display: flex;
+    align-items: center;
+}
+
+.select-all-checkbox {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+.checkmark {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: #fff;
+}
+
+.delete-contact {
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: .24s;
+}
+.delete-contact:hover{
+    transform: scale(1.05);
+}
+.delete-contact:active{
+    transform: scale(0.9);
+}
+
+.delete-icon {
+    width: 32px;
+    /* Set this to the size of your image */
+    height: 32px;
+}
+
+/* Hide the default checkbox */
+.select-all-checkbox {
+    display: none;
+}
+
+/* Style for the custom checkbox */
+.select-all {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* Checkmark span style */
+.checkmark {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #333;
+    border-radius: 4px;
+    position: relative;
+    display: inline-block;
+    margin-right: 10px;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.select-all-checkbox:checked+.checkmark {
+    background-color: #363631;
+    border-color: #dce46d;
+}
+
+.select-all-checkbox:checked+.checkmark::after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 3.5px;
+    width: 6px;
+    height: 10px;
+    border: solid rgb(216, 214, 91);
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+
+.select-all:hover .checkmark {
+    border-color: #dce46d;
+}
+
+
+/* loadings */
+
+#searchButton2{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 945px) {
+    .contacts_header {
+        display: block;
+    }
+
+    .contacts_header-left,
+    .contacts_header-right {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .contacts_header-left {
+        display: block;
+    }
+
+    .header-title {
+        text-align: center;
+    }
+
+    .header-title,
+    .header-description {
+        line-height: 1.9rem;
+    }
+
+    .contacts_logo_con {
+        margin: auto;
+        width: 52px;
+    }
+
+    .contacts_header-right {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 710px) {
+    .search-container {
+        display: block;
+    }
+
+    .search-btn {
+        width: 75%;
+        margin: auto;
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 415px) {
+    #search-bar {
+        width: 95%;
+        text-align: center;
+        font-size: 11px;
+        margin: auto;
+    }
+
+}

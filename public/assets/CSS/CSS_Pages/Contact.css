@@ -1,0 +1,358 @@
+.contact_con {
+    border: 1px solid rgb(53, 52, 52);
+    width: 80%;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    height: auto;
+    border-radius: 4px;
+    background: rgba(53, 52, 52, 0.473);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4), 0px 1px 3px rgba(0, 0, 0, 0.2);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#con_Message::-webkit-scrollbar {
+    width: 5px;
+    transition: .34s;
+}
+
+#con_Message::-webkit-scrollbar-track {
+    background: #292828;
+}
+
+#con_Message::-webkit-scrollbar-thumb {
+    background-color: #646607;
+    border-radius: 10px;
+}
+
+#con_Message::-webkit-scrollbar-thumb:hover {
+    background-color: #c9a710;
+}
+
+.contact_con h2 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(181, 184, 49);
+    margin-top: 18px;
+    text-align: center;
+}
+
+
+.Contact_Form {
+    width: 80%;
+    margin: auto;
+    padding: 15px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.Contact_Form #test,
+#Username,
+#Email,
+#Phone,
+#Title,
+#con_Message {
+    width: 240px;
+    height: 35px;
+    outline: none;
+    border: none;
+    border-radius: 7px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    background-color: #1817178e;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+#Title {
+    width: 345px;
+}
+
+#con_Message {
+    width: 420px;
+    height: 90px;
+    text-align: left;
+    padding-left: 15px;
+    padding-top: 15px;
+    resize: none;
+}
+
+form span {
+    color: red;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+button {
+    display: inline-flex;
+    height: 34px;
+    padding: 0;
+    background: #aaa01a;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    overflow: hidden;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+    transition: .16s;
+    margin-bottom: 8px;
+}
+
+
+button:hover {
+    background: #46420c;
+}
+
+button:active {
+    background: rgb(141, 133, 27);
+}
+
+
+.Contact-Message {
+    display: none;
+    margin-top: 20px;
+}
+
+.Contact-Message p {
+    color: rgb(73, 190, 73);
+}
+
+.Contact-Message.show {
+    display: block;
+    /* Display when the 'show' class is added */
+}
+
+/* attachement */
+
+.file-upload-container {
+    margin: 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact_img_con {
+    margin-top: 15px;
+}
+
+#contact_img1 {
+    width: 69px;
+}
+
+
+#contact_img2 {
+    width: 69px;
+}
+
+
+.custom-file-upload {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1em;
+    font-weight: bold;
+    color: rgb(30, 45, 71);
+    background-color: #e4ee60;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.21s;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.preview-con {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.custom-file-upload:hover {
+    background-color: #a3a85a;
+    transform: scale(1.02);
+}
+
+.custom-file-upload i {
+    margin-right: 8px;
+}
+
+#file-upload {
+    display: none;
+}
+
+.file-preview {
+    margin-top: 10px;
+    max-width: 75px;
+    max-height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.file-preview img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 4px;
+}
+
+.file-name {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #8c9232;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding: 10px;
+
+}
+
+/* attachment */
+
+
+.Contact_Info {
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 40px;
+    width: 90%;
+    height: auto;
+    padding: 20px;
+    gap: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .24s;
+}
+
+.contact_email,
+.contact_items {
+    border: 1px solid white;
+    width: 45%;
+    height: auto;
+    padding: 15px;
+    transition: .24s;
+}
+
+.contact_email {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.075);
+    border: 1px solid #444;
+    border-radius: 8px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+.contact_email h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #90921e;
+}
+
+.contact_email p {
+    font-size: 16px;
+    margin: 10px 0;
+    color: #fff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    transition: .24s;
+}
+
+.contact_email a {
+    color: #d7da46;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.contact_email a:hover {
+    color: #f4c542;
+    /* Hover effect for email */
+    text-decoration: underline;
+}
+
+
+.contact_items {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.075);
+    border: 1px solid #444;
+    border-radius: 8px;
+    text-align: left;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+    color: #fff;
+}
+
+.contact_items h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #90921e;
+    text-align: center ;
+}
+
+.contact_items p {
+    font-size: 16px;
+    margin: 10px 0;
+    line-height: 1.6;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    transition: .24s;
+}
+
+.contact_items strong {
+    color: #d7da46;
+}
+
+.button-con{
+    display: flex;
+}
+
+
+@media (max-width: 820px) {
+
+    .Contact_Info {
+        display: block;
+        gap: 0px;
+    }
+
+    .contact_email,
+    .contact_items{
+        width: 100%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+
+    .Contact_Form {
+        padding: 4px;
+    }
+
+    #Username,
+    #Email,
+    #Phone,
+    #Title,
+    #con_Message {
+        width: 95%;
+    }
+
+}

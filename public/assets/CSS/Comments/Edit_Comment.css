@@ -1,0 +1,95 @@
+.edit_comment_input {
+    background: rgba(54, 54, 54, 0.8);
+    /* Darker background for better contrast */
+    border-radius: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    /* Subtle border for depth */
+    outline: none;
+    color: white;
+    height: 42px;
+    /* Slightly increased for better typing */
+    font-size: 14px;
+    padding: 10px;
+    /* Adds inner spacing for readability */
+    width: 100%;
+    resize: none;
+    /* Prevents resizing */
+    transition: all 0.2s ease-in-out;
+}
+
+/* Focus effect */
+.edit_comment_input:focus {
+    background: rgba(64, 64, 64, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+/* Placeholder text styling */
+.edit_comment_input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+    font-style: italic;
+}
+
+/* Smoothly appear when editing */
+.edit_comment_input.show {
+    display: block;
+    opacity: 1;
+}
+
+/* Hide by default */
+.edit_comment_input.hide {
+    display: none;
+    opacity: 0;
+}
+
+
+.User_Edit_Comment_Section {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    background: #2c2c2c70;
+    padding: 10px;
+    border-radius: 6px;
+    width: 100%;
+}
+
+.edit_comment_input {
+    background: rgba(54, 54, 54, 0.8);
+    border-radius: 6px;
+    border: 1px solid #555;
+    outline: none;
+    color: #fff;
+    padding: 8px;
+    font-size: 14px;
+    width: 100%;
+    resize: none;
+}
+
+.edit_buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.edit_save_button,
+.edit_cancel_button {
+    background: #949c4a;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s ease;
+}
+
+.edit_save_button:hover {
+    background: #88a045;
+}
+
+.edit_cancel_button {
+    background: #484d1d;
+}
+
+.edit_cancel_button:hover {
+    background: #c7c549;
+}

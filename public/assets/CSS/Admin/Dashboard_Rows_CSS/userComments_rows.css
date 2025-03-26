@@ -1,0 +1,36 @@
+.userComment_row_user_name p{
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0;
+    color: #e0d96b;
+}
+
+.userComment_row_user_id p{
+    color: #7e773e;
+    margin: 0;
+}
+
+.dashboard_row_view,
+.userComment_row_id,
+.userComment_row_user_name,
+.userComment_row_user_id {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dashboard_comments_replies{
+    border: 1px solid rgba(102, 98, 98, 0.281);
+    background: rgba(51, 50, 50, 0.281);
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 15px;
+}
+.dashboard_comments_replies p{
+    color: #e0d96b;
+}

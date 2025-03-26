@@ -1,0 +1,424 @@
+.about_me_con {
+    width: 92%;
+    margin: auto;
+    margin-top: 24px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 1.4;
+    padding: 10px;
+    margin-bottom: 35px;
+    border: none;
+    padding: 3px;
+}
+
+.Items-con {
+    border: none;
+    width: 100%;
+    gap: 17px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.My_PFP,
+.My_INFO {
+    width: 45%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.ab_ic {
+    margin: auto;
+    width: 225px;
+    height: 225px;
+}
+
+#AboutMe_pfp {
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    user-select: none;
+}
+
+.Intro {
+    padding: 15px;
+    gap: 10px;
+    line-height: 1.40;
+
+}
+
+.Intro p {
+    text-align: left;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.Intro h2 {
+    color: rgb(209, 209, 72);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.Intro span {
+    color: rgb(245, 245, 59);
+    text-decoration: underline;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.Intro h3 {
+    color: rgb(145, 145, 8);
+    margin-bottom: 18px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.personal_info {
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 20px;
+    border-radius: 8px;
+    color: #e0e0e0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 20px;
+}
+
+.personal_info h2 {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: #b4b643;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 5px;
+}
+
+.personal_info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.personal_info ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #ffffff;
+}
+
+.personal_info ul li span {
+    color: #b4b643;
+    margin-right: 10px;
+    width: 150px;
+    text-align: right;
+}
+
+.personal_info ul li p {
+    margin: 0;
+    color: #ffffff;
+}
+
+.personal_info span {
+    text-decoration: none;
+}
+
+
+
+
+.Specified_Info_Con {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    transition: .24s;
+}
+
+.Speak_language,
+.Languages_Info {
+    width: 47%;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    margin: auto;
+    padding: 15px;
+    text-align: center;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    border-radius: 4px;
+    transition: .24s;
+}
+
+.Languages_Info {
+    border: none;
+}
+
+.Speak_language h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #9daf37;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.language {
+    margin-bottom: 15px;
+    text-align: left;
+    position: relative;
+}
+
+.language-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 5px;
+}
+
+.flag {
+    width: 24px;
+    height: 16px;
+    object-fit: cover;
+    border-radius: 3px;
+    pointer-events: none;
+}
+
+.language label {
+    font-size: 15px;
+    margin: 0;
+    display: block;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.progress-bar {
+    background-color: #444;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 10px;
+    width: 100%;
+    position: relative;
+}
+
+.progress-bar .progress {
+    background: linear-gradient(90deg, #ffcc00, #ffaa00);
+    height: 100%;
+    border-radius: 10px 0 0 10px;
+    transition: width 0.3s ease;
+}
+
+.language span {
+    position: absolute;
+    right: 0;
+    top: -5px;
+    font-size: 14px;
+    color: #fff;
+}
+
+
+
+.Languages_Info h2 {
+    color: #a6a81f;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+.Languages_Info p {
+    line-height: 1.8;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #fff;
+}
+
+.Languages_Info p span {
+    color: #a7af33;
+    font-weight: bold;
+}
+
+.Schools{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.School_List{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 15px;
+    border-radius: 4px;
+    background-color: #252627a9;
+    color: white;
+    width: 30%;
+}
+
+.school {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.school-logo {
+    width: 50px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+
+.school h3 {
+    color: #d2dd71;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.school p {
+    color: #a39d49;
+    font-size: 14px;
+    margin: 3px 0;
+}
+
+.School_List hr {
+    border: none;
+    border-top: 1px solid gray;
+    margin: 20px 0;
+}
+
+
+
+
+
+
+.Studies_Con {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 15px;
+    border-radius: 4px;
+    line-height: 1.4;
+    background-color: #252627a9;
+    color: white;
+    width: 68%;
+}
+
+.Studies_Con h2 {
+    color: #a6a81f;
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.Studies_Con p {
+    margin-bottom: 15px;
+    text-align: left;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.Studies_Con .highlight {
+    color: #a6a81f;
+    font-weight: bold;
+}
+
+.Studies_Con .important {
+    color: #a6a81f;
+    text-decoration: underline;
+}
+
+#IFPS{
+    color: #d3d47a;
+}
+
+.school img,a{
+    transition: .32s;
+}
+.school img:hover{
+    transform: scale(1.25);
+}
+
+.school a:hover{
+    text-decoration: underline;
+    color: #a6a81f;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 990px){
+    .Schools{
+        display: block;
+    }
+    .Studies_Con,.School_List{
+        margin: auto;
+        margin-top: 34px;
+        margin-bottom: 10px;
+    }
+
+}
+
+@media (max-width: 990px) {
+    .Specified_Info_Con {
+        display: block;
+    }
+
+    .Speak_language,
+    .Languages_Info {
+        margin: auto;
+        width: 95%;
+    }
+}
+
+@media (max-width: 830px) {
+    .Items-con {
+        display: block;
+    }
+
+    .My_PFP,
+    .My_INFO {
+        width: 100%;
+    }
+
+    .My_PFP {
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+    .School_List{
+        width: 60%;
+    }
+
+}
+
+@media (max-width: 775px){
+    .Studies_Con{
+        width: 95%;
+    }
+}
+
+@media (max-width: 420px){
+    .Intro h2,h3{
+        text-align: center;
+    }
+    .Intro p{
+        text-align: center;
+    }
+    .School_List{
+        width: 95%;
+    }
+}
+
+@media (max-width: 420px) {
+    .Speak_language h2 {
+        font-size: 15px;
+    }
+
+    .language label {
+        font-size: 11px;
+    }
+}

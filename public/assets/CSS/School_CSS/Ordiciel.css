@@ -1,0 +1,181 @@
+.School_Con {
+    border: 1px solid rgba(117, 231, 231, 0.329);
+    width: 75%;
+    margin: auto;
+    border-radius: 4px;
+    padding: 15px;
+    height: auto;
+    background: linear-gradient(to right, rgb(172, 217, 235), rgb(26, 78, 145));
+    margin-bottom: 20px;
+}
+
+.School_header {
+    padding: 5px;
+    gap: 20px;
+    display: flex;
+}
+
+.School_Logo {
+    width: 85px;
+    height: 85px;
+}
+
+.School_Logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.Header_Info {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center;
+    align-items: center;
+}
+
+
+.Header_Info #Ordiciel_Title {
+    font-size: 24px;
+    background: linear-gradient(to right, rgb(35, 35, 179), rgb(30, 205, 211));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+}
+
+.Header_Info #Ordiciel_desc{
+    color: rgb(43, 98, 161);
+}
+
+.School_Body{
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    padding: 8px;
+}
+
+.School_Body .left,
+.School_Body .right {
+    flex: 1; /* Make both divs take up equal width */
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.School_Body .right{
+    border: 1px solid rgba(24, 23, 23, 0.575);
+}
+
+.School_Body .right p {
+    margin: 5px 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.School_Body .right .info {
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.School_Body i {
+    color: #8fceda; /* Icon color */
+    margin-right: 8px;
+}
+
+
+.left {
+    line-height: 1.6;
+    color: #333;
+}
+
+.left p {
+    margin: 10px 0;
+    text-align: justify;
+    font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+
+}
+
+.left .highlight {
+    font-weight: bold;
+    color: #0056b3; /* A subtle blue for highlights */
+}
+
+.left .important {
+    font-weight: bold;
+    color: #085072;
+    text-decoration: underline;
+}
+
+.left .icons {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.left .icons img {
+    width: 30px;
+    height: 30px;
+    border-radius: 4px;
+    transition: transform 0.3s ease;
+}
+
+.left .icons img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+.School_Diplomat{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    border: 1px solid white;
+    padding: 10px;
+}
+
+.Diplomat_con,.Diplomat_Info{
+    flex: 1;
+    border: 1px solid Gray;
+}
+
+.Diplomat_con img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease-in-out;
+    pointer-events: none;
+}
+
+.Diplomat_con img:hover {
+    transform: scale(1.2);
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 885px){
+    .School_Body{
+        display: block;
+    }
+}
+
+
+@media (max-width: 500px){
+    .left p{
+        text-align: center;
+    }
+    .School_header{
+        display: block;
+    }
+    .School_Logo{
+        margin: auto;
+        margin-bottom: 18px;
+    }
+}

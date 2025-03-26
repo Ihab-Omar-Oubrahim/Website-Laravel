@@ -1,0 +1,59 @@
+.banned_container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banned_info{
+    border: 1px solid rgba(53, 53, 53, 0.678);
+    background: rgba(48, 47, 47, 0.575);
+    padding: 10px;
+    border-radius: 5px;
+    min-width: 350px;
+    min-height: 480px;
+}
+
+.img_con{
+    margin: auto;
+    width: 128px;
+    height: 128px;
+    margin-top: 18px;
+}
+.img_con img{
+    width: 100%;
+}
+
+.ban_info_con{
+    margin-top: 12px;
+}
+
+.ban_info_con h2{
+    text-align: center;
+    color: rgb(189, 81, 81);
+}
+.ban_info_con p{
+    text-align: center;
+    color: rgb(231, 104, 110);
+}
+.ban_info_con h2,p{
+    line-height: 1.8rem;
+}
+
+.ban_details{
+    border: 1px solid rgba(53, 53, 53, 0.678);
+    background: rgba(48, 47, 47, 0.575);
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 24px;
+}
+.ban_details h3{
+    text-align: center;
+    color: rgb(189, 81, 81);
+}
+.ban_details p{
+    text-align: center;
+    color: rgb(231, 104, 110);
+    font-size: 12.4px;
+}

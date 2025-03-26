@@ -1,0 +1,41 @@
+.guest_login_container {
+    border: none;
+}
+
+#Guest_Login_Button {
+    border-radius: 4px;
+    background: rgb(237, 240, 99);
+    color: rgb(0, 0, 0);
+    height: 38px;
+    width: 140px;
+    outline: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: none;
+    transition: .18s;
+    margin-top: 20px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+#Guest_Login_Button:hover {
+    transform: scale(1.09);
+    background: rgb(167, 168, 72);
+}
+
+#Guest_Login_Button:active {
+    transform: scale(0.9);
+    background: rgb(106, 107, 56);
+}
+
+.login_footing_msg_guest{
+    margin-left: 30px;
+}
+
+@media (max-width: 992px) {
+    .login_footing_msg_guest {
+        margin: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

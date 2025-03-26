@@ -1,0 +1,72 @@
+/* Contact Rows Columns CSS */
+
+.contact_user_pfp img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.contact_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 120px;
+}
+
+.contact_name {
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0;
+    color: #e0d96b;
+}
+
+.contact_user_id {
+    font-size: 0.8rem;
+    color: #464117;
+    margin: 0;
+}
+
+.contact_phone p {
+    margin: 0;
+    color: #ffffff;
+    font-size: 0.9rem;
+    white-space: nowrap;
+}
+
+
+.contact_attachment img {
+    width: 32px;
+    height: 32px;
+}
+
+.contact_row_id {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #e0d96b;
+    margin-left: 8px;
+    min-width: 30px;
+    text-align: center;
+}
+
+/* organize the row placements */
+.contact_user_pfp,
+.contact_row_id,
+.contact_info,
+.contact_phone,
+.contact_attachment,
+.dashboard_row_view {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+/* Popup CSS Rows for Contact */
+

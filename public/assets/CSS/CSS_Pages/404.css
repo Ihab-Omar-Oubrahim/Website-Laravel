@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.div_404_con {
+    border: 1px solid rgb(53, 52, 52);
+    width: 80%;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    height: auto;
+    border-radius: 4px;
+    background: rgba(53, 52, 52, 0.473);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4), 0px 1px 3px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+}
+
+.Four_O_Four {
+    border-radius: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.Four_O_Four h1 {
+    font-size: 85px;
+}
+
+.line_404 {
+    border: 1px solid rgb(202, 211, 82);
+    background: rgb(202, 211, 82);
+    border-radius: 20px;
+    width: 98px;
+    padding: 3px;
+    margin-bottom: 10px;
+}
+
+.div_404_left,
+.div_404_right {
+    flex: 1;
+}
+
+.div_404_right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#uhoh {
+    font-size: 52px;
+    color: rgb(226, 209, 52);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+#desc_404 {
+    color: rgb(228, 215, 104);
+    padding-right: 20%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+
+#Four_1 {
+    color: rgb(228, 215, 104);
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+#O_2 {
+    color: rgb(122, 114, 41);
+    font-family: 'Chakra Petch', sans-serif;
+
+}
+
+#Four_3 {
+    color: rgb(228, 215, 104);
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+.road_img_con {
+    margin-bottom: 15px;
+    width: 95px;
+    margin: auto;
+    margin-top: 48px;
+}
+
+.road_img_con img {
+    width: 100%;
+    height: auto;
+}
+
+
+#Home_Button {
+    border-radius: 4px;
+    background: rgb(237, 240, 99);
+    color: rgb(0, 0, 0);
+    height: 38px;
+    width: 140px;
+    outline: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: none;
+    transition: .18s;
+    margin-top: 20px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+#Home_Button:hover {
+    transform: scale(1.09);
+    background: rgb(167, 168, 72);
+}
+
+#Home_Button:active {
+    transform: scale(0.9);
+    background: rgb(106, 107, 56);
+}
+
+.home_button_con{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media (max-width: 1069px) {
+    .div_404_con {
+        display: block;
+    }
+
+    #uhoh,
+    #desc_404 {
+        text-align: center;
+    }
+
+    #desc_404 {
+        padding-right: 0px;
+    }
+
+    .line_404 {
+        margin: auto;
+        width: 60%;
+        margin-bottom: 18px;
+    }
+
+    .div_404_right{
+        margin-top: 34px;
+    }
+}
+
+@media (max-width: 765px){
+    .div_404_right{
+        width: 80%;
+        margin: auto;
+        margin-top: 34px;
+    }
+    .div_404_right img{
+        width: 100%;
+    }
+}
+
+@media (max-width: 415px){
+    .div_404_con{
+        width: 100%;
+        background: none;
+        border: none;
+        box-shadow: none;
+    }
+}

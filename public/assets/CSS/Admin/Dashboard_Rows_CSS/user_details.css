@@ -1,0 +1,351 @@
+.user_header,
+.user_important_info,
+.user_social_info,
+.Dashboard_Options,
+.important_info_options,
+.user_admin_checker
+{
+    border: 1px solid rgba(54, 53, 53, 0.829);
+    border-radius: 4px;
+    background: rgba(43, 41, 41, 0.712);
+    padding: 12px;
+    display: flex;
+    gap: 15px;
+}
+
+.user_image {
+    width: 175px;
+    height: 175px;
+
+}
+
+.user_image img {
+    width: 128px;
+    height: 128px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.image_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user_img_change {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.user_img_change button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 16px;
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(231, 220, 121);
+    background-color: rgb(50, 50, 50);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.user_img_change button i {
+    font-size: 16px;
+}
+
+.user_img_change button:hover {
+    background-color: rgb(80, 80, 80);
+    transform: scale(1.05);
+}
+
+.user_img_change button:active {
+    background-color: rgb(129, 129, 129);
+    transform: scale(0.975);
+}
+
+
+.user_info {
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.user_info input,
+.user_important_info input,
+.user_other_social_info_container input,
+.user_id_inputs input {
+    padding: 8px;
+    outline: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    border: none;
+    background-color: #18171700;
+    border-radius: 7px;
+    color: rgb(231, 220, 121);
+    width: 300px;
+}
+
+.user_info fieldset,
+.user_important_info fieldset,
+.user_bio_container fieldset,
+.user_other_social_info_container fieldset,
+.user_id_inputs fieldset {
+    border: 1px solid rgba(255, 255, 255, 0);
+    border-radius: 7px;
+    padding: 8px 12px;
+    width: 300px;
+    position: relative;
+    background-color: #1817178e;
+}
+
+.user_info legend,
+.user_important_info legend,
+.user_bio_container legend,
+.user_other_social_info_container legend,
+.user_id_inputs legend {
+    font-size: 12px;
+    color: rgb(189, 176, 59);
+    padding: 0 5px;
+    text-align: left;
+    width: 100%;
+}
+
+#password_note {
+    color: rgb(119, 122, 106);
+    font-size: 9px;
+    text-align: left;
+}
+
+.user_important_info {
+    margin-top: 10px;
+}
+
+.user_social_info {
+    margin-top: 10px;
+    display: flex;
+}
+
+.user_other_social_info_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.user_other_social_info_container input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.user_bio_container textarea {
+    border: 1px solid rgba(255, 255, 255, 0);
+    border-radius: 7px;
+    padding: 8px 12px;
+    position: relative;
+    background-color: #1817178e;
+    width: 100%;
+    height: 100%;
+    resize: none;
+    outline: none;
+    color: rgb(231, 220, 121);
+}
+
+.user_bio_container fieldset {
+    height: 100%;
+}
+
+.user_other_social_info_container {
+    border: 1px solid rgba(255, 255, 255, 0);
+    border-radius: 7px;
+    padding: 8px 12px;
+    position: relative;
+    background-color: #1817178e;
+}
+
+.user_other_social_info_container input {
+    background: rgb(36, 35, 35);
+}
+
+
+.Dashboard_Options {
+    margin-top: 10px;
+}
+
+.important_info_options {
+    background: rgba(36, 35, 35, 0);
+    border: none;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.image_container img {
+    cursor: pointer;
+    transition: .18s;
+}
+
+.image_container img:hover {
+    transform: scale(1.0975);
+}
+
+.image_container img:active {
+    transform: scale(0.95);
+}
+
+#user_password_change_note,
+#user_id_change_note {
+    margin-top: 12px;
+    color: rgb(165, 165, 165);
+    font-size: 10px;
+}
+
+
+.new_id_con {
+    display: flex;
+    gap: 10px;
+}
+
+.new_id_con .EXO {
+    width: 50px !important;
+}
+
+.EXO input {
+    width: 50px;
+}
+
+.ID input {
+    width: auto;
+}
+
+
+
+.user_admin_checker{
+    margin-top: 8px;
+}
+.admin_info,.admin_img{
+    flex: 1;
+    padding: 5px;
+}
+.staff_details_con{
+    margin-top: 9px;
+}
+
+.admin_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+
+.admin_info p{
+    text-align: left;
+    line-height: 1.8rem;
+    font-size: 14.5px;
+    color: rgb(187, 185, 183);
+}
+
+.admin_img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.admin_img img{
+    width: 200px;
+    height: auto;
+}
+
+@media (max-width: 1135px) {
+    .user_social_info {
+        display: block;
+    }
+
+    .user_other_social_info_container {
+        margin-top: 10px;
+    }
+
+    .user_bio_container fieldset {
+        width: 100%;
+    }
+}
+
+@media (max-width: 740px){
+    .user_admin_checker{
+        display: block;
+    }
+    .admin_info{
+        justify-content: center;
+        align-items: center;
+    }
+    .admin_info p {
+        text-align: center;
+    }
+
+    .staff_details_con{
+        width: 85%;
+    }
+
+
+}
+
+@media (max-width: 860px) {
+    .user_header {
+        display: block;
+    }
+
+    .user_image {
+        margin: auto;
+    }
+
+    .user_info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .user_important_info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .user_other_social_info_container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* Center everything horizontally */
+    }
+
+    .user_other_social_info_container fieldset {
+        width: 100%;
+    }
+
+    .user_other_social_info_container input {
+        width: 100%;
+        /* Makes input fully responsive inside fieldset */
+    }
+
+}
+
+@media (max-width: 515px) {
+
+    .user_info input,
+    .user_important_info input {
+        width: 100%;
+        min-width: 0px;
+    }
+
+    .user_info fieldset,
+    .user_important_info fieldset {
+        width: 100%;
+    }
+}

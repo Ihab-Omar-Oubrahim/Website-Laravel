@@ -1,0 +1,168 @@
+/* Overlay background */
+.overlay {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0);
+    z-index: 999;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease-out;
+}
+
+.overlay.show {
+    opacity: 1;
+    pointer-events: all;
+}
+
+/* Popup container */
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    z-index: 1000;
+    width: 80%;
+    max-width: 400px;
+    max-height: 375px;
+    background-color: #222020;
+    border: 1px solid rgb(95, 92, 92);
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    opacity: 0;
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+
+
+    overflow-y: auto;
+}
+
+.popup.show {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+}
+
+.popup.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* popup content */
+
+.popup_content {
+    padding: 5px;
+}
+
+.popup_options {
+    gap: 15px;
+    height: auto;
+}
+
+.popup_options a {
+    background: rgba(56, 53, 53, 0.87);
+    padding: 8px;
+    border-radius: 4px;
+    transition: .18s;
+    cursor: pointer;
+    color: rgb(190, 192, 99);
+}
+
+.popup_options a:hover {
+    background: rgba(77, 72, 72, 0.87);
+
+}
+
+.default_msg_popup_modify {
+    margin-top: 25px;
+}
+
+.default_msg_popup_modify p {
+    font-size: 28px;
+    color: rgb(190, 192, 99);
+}
+
+.user_password_modify,
+.user_id_modify {
+    margin-top: 25px;
+    border: 1px solid rgb(48, 46, 46);
+    background: #22202091;
+    padding: 8px;
+}
+
+.user_password_inputs {
+    margin-top: 10px;
+}
+
+
+.user_password_inputs fieldset {
+    border: 1px solid rgba(255, 255, 255, 0);
+    border-radius: 7px;
+    padding: 8px 12px;
+    width: 300px;
+    position: relative;
+    background-color: #1817178e;
+}
+
+.user_password_inputs legend {
+    font-size: 12px;
+    color: rgb(189, 176, 59);
+    padding: 0 5px;
+    text-align: left;
+    width: 100%;
+}
+
+.user_password_inputs input {
+    padding: 8px;
+    outline: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    border: none;
+    background-color: #18171700;
+    border-radius: 7px;
+    color: rgb(231, 220, 121);
+    width: 300px;
+}
+
+.user_password_options {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.user_password_options button {
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.user_password_options button i {
+    margin-right: 5px;
+}
+
+.cancel_btn {
+    background: #5e631c;
+    color: white;
+    transition: .18s;
+}
+
+.save_btn {
+    background: #a5ad59;
+    color: white;
+    transition: .18s;
+}
+
+.cancel_btn:hover,
+.save_btn:hover {
+    transform: scale(1.0975);
+}
+
+.cancel_btn:active,
+.save_btn:active {
+    transform: scale(0.980);
+}

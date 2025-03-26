@@ -1,0 +1,61 @@
+.LD-label,.LD-label2{
+    height: 26px;
+    width: 50px;
+    background-color: #11111141;
+    display: flex;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px;
+    position: relative;
+    transform: scale(1.6);
+    cursor: pointer;
+}
+.fa-moon{
+    color: #f1c40f;
+}
+.fa-sun{
+    color: #f39c12;
+}
+.ball,.ball2 {
+    width: 22px;
+    height: 22px;
+    background: #5c5c5c;
+    top: 2px;
+    left: 2px;
+    border-radius: 50%;
+    position: absolute;
+    transition: transform 0.04s linear;
+}
+
+#checkbox-LD, #checkbox-LD2{
+    opacity: 0;
+    position: absolute;
+}
+
+#checkbox-LD:checked + .LD-label .ball{
+    transform: translateX(24px);
+}
+
+#checkbox-LD2:checked + .LD-label2 .ball2{
+    transform: translateX(24px);
+}
+
+body.light{
+    background-color: #fff;
+    background: url('../res/Light.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+
+.LD-container{
+    width: 100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

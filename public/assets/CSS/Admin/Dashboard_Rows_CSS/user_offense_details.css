@@ -1,0 +1,63 @@
+.user_important_info {
+    display: block;
+}
+
+.suspended_user_img_con {
+    width: 128px;
+    height: 128px;
+    overflow: hidden;
+    margin: auto;
+}
+
+.suspended_user_img_con img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.suspended_user_info_con{
+    margin-top: 12px;
+    margin: auto;
+}
+.suspended_user_info_con h4,p{
+    text-align: center;
+}
+.suspended_user_info_con h4{
+    color: rgb(189, 189, 95);
+    font-size: 18px;
+}
+.suspended_user_info_con p{
+    color: rgb(78, 78, 29);
+    font-size: 12px;
+}
+
+.offense_container{
+    border: 1px solid white;
+    width: 97%;
+    margin: auto;
+    padding: 10px;
+    margin-top: 18px;
+    gap: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.offense_container .offense_details,.user_offenses_con{
+    flex: 1;
+    border: 1px solid rgb(51, 48, 48);
+    background: rgba(22, 21, 21, 0.658);
+    padding: 4px;
+    border-radius: 4px;
+}
+
+/* left side */
+
+.offense_img_container img{
+    width: 48px;
+    height: 48px;
+    padding: 6px;
+}
+
+.offense_details_info{
+    margin-top: 10px;
+}

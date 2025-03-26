@@ -1,0 +1,124 @@
+.Admin_Account_Con {
+    border: 1px solid rgb(53, 52, 52);
+    width: 95%;
+    max-width: 375px;
+    margin: auto;
+    height: auto;
+    border-radius: 4px;
+    background: rgba(53, 52, 52, 0.473);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4), 0px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.IMG_con {
+    margin: auto;
+    margin-top: 20px;
+    width: 128px;
+    height: 128px;
+}
+
+.IMG_con img {
+    width: 100%;
+}
+
+.Login_con {
+    margin-top: 15px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.Login_con input::placeholder{
+    color: rgb(107, 103, 103);
+}
+
+.Login_con input {
+    width: 240px;
+    height: 35px;
+    outline: none;
+    border: none;
+    border-radius: 7px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    background-color: #1817178e;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.password-wrapper {
+    position: relative;
+}
+
+#password-input {
+    width: 100%;
+    padding-right: 2.5rem;
+}
+
+.eye-icon {
+    position: absolute;
+    right: 0.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    width: 28px;
+    height: 28px;
+}
+
+.button_con {
+    margin-top: 18px;
+    margin-bottom: 45px;
+    width: 260px;
+}
+
+.button_con button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: rgb(138, 139, 77);
+    color: #000;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3);
+    transition: .37s;
+}
+
+.button_con button:hover {
+    background: rgb(231, 222, 87);
+    transform: scale(1.05);
+    box-shadow: 4px 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+.button_con img {
+    width: 32px;
+}
+
+
+
+
+@media (max-width: 440px) {
+    .Admin_Account_Con {
+        max-width: none;
+    }
+
+    .Login_con input {
+        width: 95%;
+    }
+
+    .password-wrapper {
+        width: 95%;
+    }
+
+    .button_con {
+        width: 90%;
+    }
+}
