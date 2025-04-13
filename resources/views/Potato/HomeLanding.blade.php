@@ -20,11 +20,10 @@
 
         <div class="Info-Form">
             <div class="Logo-IF-Con">
-                <img src="{{ asset('assets/res/LogoTemp.png') }}" alt="Logo">
+                <img src="{{$homeLandingIdeatext->getIdeaImage()}}" alt="Logo">
             </div>
-            <h2>Have Something to Share?</h2>
-            <p>Your thoughts matter. I am here to listen and discuss.</p>
-            <p>Feel free to reach out. Let's start a meaningful conversation today!</p>
+            <h2> {{$homeLandingIdeatext->Idea_title}} </h2>
+            <p> {{$homeLandingIdeatext->Idea_desc}} </p>
         </div>
 
         <div class="Form-Container">

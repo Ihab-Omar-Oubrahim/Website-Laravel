@@ -33,6 +33,7 @@ class User extends Authenticatable
         'password',
         'is_admin',
         'following',
+        'is_banned',
     ];
 
     public function profile()

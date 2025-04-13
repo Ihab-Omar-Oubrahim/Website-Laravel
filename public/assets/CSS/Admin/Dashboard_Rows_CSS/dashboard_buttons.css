@@ -61,6 +61,15 @@
     background-color: #c82333;
 }
 
+.ban-btn{
+    background-color: #5c2b30;
+}
+
+.ban-btn:hover {
+    background-color: #74484d;
+}
+
+
 /* Edit Credentials Button */
 .edit-credentials-btn {
     background-color: #436080;

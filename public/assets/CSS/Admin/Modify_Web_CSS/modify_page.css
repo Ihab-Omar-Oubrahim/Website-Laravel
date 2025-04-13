@@ -1,0 +1,358 @@
+.Website_Page_Modification_Container,
+.Modifications_Options,
+.Website_Pages_Selections {
+    border: 1px solid rgba(102, 98, 98, 0.281);
+    background: rgba(51, 50, 50, 0.281);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 15px;
+    gap: 12px;
+}
+
+.section-tab {
+    padding: 6px 12px;
+    background-color: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 13px;
+    transition: background-color 0.2s ease;
+}
+
+.section-tab:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.section-tab.active {
+    background-color: #3498db;
+    color: #fff;
+}
+
+.section-form {
+    display: none;
+    margin-top: 20px;
+}
+
+.section-form.active {
+    display: block;
+}
+
+.section-tab {
+    padding: 6px 12px;
+    background-color: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 13px;
+    transition: background-color 0.2s ease;
+}
+
+.section-tab:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.section-tab.active {
+    background-color: #3498db;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.left_container,
+.right_container {
+    flex: 1;
+    padding: 5px;
+}
+
+.right_container {
+    display: flex;
+    justify-content: center;
+    overflow-y: auto;
+    max-height: 500px;
+    padding: 10px;
+    border: 1px solid white;
+}
+
+.right_container img {
+    width: 100%;
+    height: 1400px; /* having issues here*/
+}
+
+
+
+
+.left_container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form_group {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 10px;
+}
+
+.form_legend {
+    font-size: 14px;
+    color: #ddd;
+    margin-bottom: 6px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+.styled_input {
+    background-color: #1c1c1c;
+    border: 1px solid #444;
+    color: #eee;
+    border-radius: 6px;
+    padding: 10px;
+    font-size: 14px;
+    transition: border 0.3s ease;
+}
+
+.styled_input:focus {
+    border-color: #ffcd57;
+    outline: none;
+}
+
+#textarea_parag_1,
+#textarea_parag_2 {
+    height: 90px;
+    resize: none;
+}
+
+.custom-button {
+    cursor: pointer;
+    background-color: rgb(95, 84, 33);
+    border-radius: 4px;
+    width: 175px;
+    height: 40px;
+    color: var(--Default-color);
+    font-size: 16px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: none;
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.4);
+    margin-top: 15px;
+    margin-bottom: 6px;
+    transition: .27s;
+    padding: 3px;
+}
+
+.custom-button:hover {
+    transform: scale(1.2) translateX(0);
+    box-shadow: 0 2px 9px rgba(255, 255, 255, 0.4);
+    background-color: rgb(189, 160, 34);
+}
+
+.custom-button:active {
+    background-color: rgb(243, 202, 18);
+}
+
+.custom-button input {
+    background: transparent;
+    outline: none;
+    height: 100%;
+    width: 100%;
+    font-size: 20px;
+    border-radius: 4px;
+    border: none;
+    text-align: center;
+}
+
+
+.images_containers {
+    display: flex;
+    gap: 20px;
+}
+
+.img-con {
+    width: 64px;
+    height: 64px;
+    position: relative;
+    overflow: hidden;
+}
+
+.img-con img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 4px;
+}
+
+.img-con img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.img-con img:active {
+    transform: scale(0.9);
+}
+
+
+
+
+
+
+
+
+
+
+.is_visible_con {
+    border: 1px solid rgba(102, 98, 98, 0.281);
+    background: rgba(51, 50, 50, 0.281);
+    border-radius: 4px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+}
+
+#visible_description {
+    color: #686767;
+    font-size: 11px;
+    text-align: left;
+    margin-top: 10px;
+}
+
+#quick_note {
+    color: #686767;
+    font-size: 11px;
+    text-align: left;
+    margin-top: 10px;
+}
+
+
+
+.toggle-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+/* The switch - the outer container */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 28px;
+}
+
+/* Hide the default checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider background */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: gray;
+    transition: 0.4s;
+    border-radius: 34px;
+}
+
+/* The circle (toggle knob) */
+.slider::before {
+    position: absolute;
+    content: "";
+    height: 22px;
+    width: 22px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+/* When checked - background changes */
+input:checked+.slider {
+    background-color: rgb(255, 211, 0);
+    /* Yellow */
+}
+
+/* Move the knob to the right when checked */
+input:checked+.slider::before {
+    transform: translateX(22px);
+}
+
+.toggle-label {
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 980px) {
+    .Website_Page_Modification_Container {
+        flex-direction: column-reverse;
+    }
+
+    .left_container,
+    .right_container {
+        width: 98%;
+    }
+}
+
+@media (max-width: 520px) {
+    .Website_Page_Modification_Container {
+        padding: 0;
+    }
+
+    .left_container,
+    .right_container {
+        padding: none;
+    }
+
+    .form_group {
+        width: 100%;
+    }
+
+    .images_containers {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

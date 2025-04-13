@@ -65,7 +65,7 @@
                                         data-id="{{ $offenseUser->id }}" value="{{ $offenseUser->id }}" />
                                     <label for="checkbox_{{ $offenseUser->id }}" class="custom_checkbox"></label>
                                 </div>
-
+                                <p id="id_tag"> #{{ $offenseUser->id }} </p>
                                 <div class="users_img">
                                     <img src="{{ optional($offenseUser->user)->getImageURL() ?? asset('assets/res/Admin_Res/sidebar_res/unknown.png') }}"
                                         alt="{{ optional($offenseUser->user)->getImageURL() ? 'valid_user' : 'unknown_user' }}">
@@ -81,11 +81,12 @@
                                 </div>
 
                                 <div class="users_view_details">
-                                    <a href="{{ $offenseUser->user_id ? route('dashboard_offense_details', ['user_id' => $offenseUser->user_id]) : '#' }}"
+                                    <a href="{{ route('dashboard_offense_details', ['user_id' => $offenseUser->user_id, 'offense_id' => $offenseUser->id]) }}"
                                         class="users_details_button">
                                         Offense Details
                                     </a>
                                 </div>
+
                             </div>
                         @empty
                             <div class="Empty_Users">
@@ -93,8 +94,13 @@
                             </div>
                         @endforelse
 
+
                     </div>
 
+                    <!-- Pagination Links -->
+                    <div id="paginationContainer" class="pagination_container" style="margin-top: 20px;">
+                        {{ $offenseUsers->links() }}
+                    </div>
                 </div>
 
                 @include('admin.Elements.dashboard_footer')

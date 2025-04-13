@@ -206,7 +206,6 @@
     font-size: 10px;
 }
 
-
 .new_id_con {
     display: flex;
     gap: 10px;
@@ -223,8 +222,6 @@
 .ID input {
     width: auto;
 }
-
-
 
 .user_admin_checker{
     margin-top: 8px;
@@ -262,6 +259,20 @@
     width: 200px;
     height: auto;
 }
+
+.Offense_Container{
+    border: rgb(63, 61, 61) 1px solid;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.user_offenses_con{
+   max-height: 400px;
+}
+
+
+
+
 
 @media (max-width: 1135px) {
     .user_social_info {

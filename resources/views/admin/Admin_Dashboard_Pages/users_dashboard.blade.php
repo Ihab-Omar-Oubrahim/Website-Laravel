@@ -97,6 +97,10 @@
                         @endforelse
                     </div>
 
+                    <!-- Pagination Links -->
+                    <div id="paginationContainer" class="pagination_container" style="margin-top: 20px;">
+                        {{ $usersAccount->links() }}
+                    </div>
                 </div>
 
                 @include('admin.Elements.dashboard_footer')
@@ -111,6 +115,5 @@
 
 @endauth
 @guest
-   @include('errors.404')
+    @include('errors.404')
 @endguest
-

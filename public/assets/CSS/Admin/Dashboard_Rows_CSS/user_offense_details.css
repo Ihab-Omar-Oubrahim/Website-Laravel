@@ -15,24 +15,40 @@
     object-fit: cover;
     border-radius: 50%;
 }
-.suspended_user_info_con{
+
+.suspended_user_info_con {
     margin-top: 12px;
     margin: auto;
 }
-.suspended_user_info_con h4,p{
+
+.suspended_user_info_con h4,
+p {
     text-align: center;
 }
-.suspended_user_info_con h4{
+
+.suspended_user_info_con h4 {
     color: rgb(189, 189, 95);
     font-size: 18px;
 }
-.suspended_user_info_con p{
+
+.suspended_user_info_con p {
     color: rgb(78, 78, 29);
     font-size: 12px;
+    text-align: center;
 }
 
-.offense_container{
-    border: 1px solid white;
+.dashboard_user_details_con {
+    margin-top: 14px;
+    margin-bottom: 10px;
+    padding: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.offense_container {
     width: 97%;
     margin: auto;
     padding: 10px;
@@ -41,8 +57,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    align-items: stretch;
 }
-.offense_container .offense_details,.user_offenses_con{
+
+.offense_container .offense_details,
+.user_offenses_con {
     flex: 1;
     border: 1px solid rgb(51, 48, 48);
     background: rgba(22, 21, 21, 0.658);
@@ -52,12 +71,208 @@
 
 /* left side */
 
-.offense_img_container img{
-    width: 48px;
-    height: 48px;
-    padding: 6px;
+.offense_details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.offense_details_info{
-    margin-top: 10px;
+
+.offense_img_container {
+    width: 117px;
+    height: 117px;
+    margin: auto;
+    margin-top: 14px;
+    margin-bottom: 25px;
+}
+
+.offense_img_container img {
+    width: 100%;
+}
+
+.offense_details_info h2,
+p {
+    text-align: center;
+    line-height: 1.4rem;
+}
+
+.offense_details_info h2 {
+    margin-bottom: 6px;
+    font-size: 27px;
+    color: rgb(167, 167, 79);
+    font-weight: bold;
+}
+
+.offense_details_info strong {
+    color: rgb(119, 119, 37);
+}
+
+.offense_details_info p {
+    color: rgb(180, 180, 49);
+}
+
+.delete_ban_record_con {
+    margin-top: 14px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 18px;
+}
+
+.delete_record_btn,
+.view_user_btn {
+    background-color: rgb(200, 50, 50);
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    /* Space between icon and text */
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.delete_record_btn i,
+.view_user_btn i {
+    font-size: 18px;
+}
+
+.delete_record_btn:hover {
+    background-color: rgb(180, 40, 40);
+    transform: scale(1.05);
+}
+
+.delete_record_btn:active,
+.view_user_btn:active {
+    transform: scale(0.95);
+}
+
+.view_user_btn {
+    background-color: rgb(132, 141, 47);
+    color: white;
+}
+
+.view_user_btn:hover {
+    background-color: rgb(109, 114, 36);
+    transform: scale(1.05);
+}
+
+/* ban history */
+
+#offense_records_title {
+    color: #cecca6;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 26px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.user_offenses_con {
+    overflow-x: auto;
+}
+
+.user_offenses_con::-webkit-scrollbar {
+    width: 4px;
+}
+
+.user_offenses_con::-webkit-scrollbar-thumb {
+    background: #ddcc6e;
+}
+
+.user_offenses_con::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.selected_user_offense_record {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    background: rgba(32, 31, 31, 0.651);
+    border-radius: 5px;
+    border: 1px solid rgb(44, 42, 42);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 4px;
+    margin-top: 4px;
+}
+
+.selected_user_offense_record:hover {
+    background-color: rgba(40, 40, 40, 0.8);
+    transform: scale(1.03);
+}
+
+.selected_user_offense_record:active {
+    transform: scale(0.98);
+}
+
+.selected_user_offense_record p {
+    margin: 0;
+    color: #bdbb75;
+    font-size: 14px;
+}
+
+#ban_record_id {
+    flex: 1;
+    text-align: left;
+}
+
+#ban_record_time {
+    flex: 1;
+    text-align: center;
+}
+
+#ban_record_view_btn {
+    flex-shrink: 0;
+    padding: 8px 16px;
+    background-color: #3498db;
+    border: none;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#ban_record_view_btn:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}
+
+#ban_record_view_btn:active {
+    background-color: #1c6ba0;
+    transform: scale(0.98);
+}
+
+
+.user_offenses_con::-webkit-scrollbar {
+    height: 4px;
+}
+
+@media (max-width: 990px) {
+    .offense_container {
+        display: block;
+    }
+
+    .user_offenses_con{
+        margin-top: 12px;
+    }
+
+}
+
+@media (max-width: 630px) {
+    .selected_user_offense_record {
+        min-width: 380px;
+        flex-shrink: 0;
+    }
 }

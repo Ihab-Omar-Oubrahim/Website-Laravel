@@ -14,7 +14,7 @@
 <style>
     /* Keep existing styles */
     #offenseIdtoDelete {
-        display: block;
+        display: none;
     }
 
     .confirm-popup {

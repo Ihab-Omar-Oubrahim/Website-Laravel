@@ -4,6 +4,9 @@ namespace App\Http\Controllers;
 
 use App\Models\User;
 use App\Models\UserComment;
+use App\Models\Website\HomeLandingS1Intro;
+use App\Models\Website\HomeLandingS2Info;
+use App\Models\Website\HomeLandingS3Idea;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -16,9 +19,23 @@ class Dashboard extends Controller
         if (Auth::check() && Auth::user()->is_banned) {
             return view('errors.suspended', ['user' => Auth::user()]);
         } else {
-            return view('Potato.HomeLanding');
+            $homeLandingIntroText = HomeLandingS1Intro::first();
+            $homeLandingInfoText = HomeLandingS2Info::first();
+            $homeLandingIdeatext = HomeLandingS3Idea::first();
+
+
+            return view('Potato.HomeLanding', ['homeLandingIntroText' => $homeLandingIntroText,
+                                               'homeLandingInfoText' => $homeLandingInfoText,
+                                               'homeLandingIdeatext' => $homeLandingIdeatext
+
+
+
+                                            ]);
         }
     }
+
+
+
     public function terms()
     {
         return view('Potato.Pages.Terms');

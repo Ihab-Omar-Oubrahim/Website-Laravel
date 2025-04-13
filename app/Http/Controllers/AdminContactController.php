@@ -269,4 +269,48 @@ class AdminContactController extends Controller
             return redirect()->back()->with('error', 'Unable to delete Offense.');
         }
     }
+
+    public function delete_user_offense_record($offenseId)
+    {
+        $offense = Offense::find($offenseId);
+
+        if (!$offense) {
+            return redirect()->back()->with('error', 'Offense record not found.');
+        }
+
+        $offense->delete();
+
+        return redirect()->route('dashboard_offense')->with('success', 'Offense record deleted successfully.');
+    }
+
+    public function ban_selected_user(Request $request)
+    {
+        $validatedData = $request->validate([
+            'user_id' => ['required', 'exists:users,user_id'],
+            'reason' => ['nullable', 'string', 'max:255'],
+        ]);
+
+        $reason = !empty($validatedData['reason']) ? $validatedData['reason'] : 'No Reason Given';
+
+        Offense::create([
+            'user_id' => $validatedData['user_id'],
+            'reason' => $reason,
+        ]);
+
+        User::where('user_id', $validatedData['user_id'])->update(['is_banned' => 1]);
+
+        return redirect()->back()->with('success', 'User has been banned successfully.');
+    }
+
+    public function unban_selected_user(Request $request)
+    {
+
+        $validatedData = $request->validate([
+            'user_id' => ['required', 'exists:users,user_id'],
+        ]);
+
+        User::where('user_id', $validatedData['user_id'])->update(['is_banned' => 0]);
+
+        return redirect()->back()->with('success', 'User has been unbanned successfully.');
+    }
 }

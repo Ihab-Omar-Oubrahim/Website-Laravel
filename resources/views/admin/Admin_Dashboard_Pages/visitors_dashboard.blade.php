@@ -134,7 +134,7 @@
                     </div>
 
                     <!-- Pagination Links -->
-                    <div id="paginationContainer" class="pagination_container">
+                    <div id="paginationContainer" class="pagination_container" style="margin-top: 20px;">
                         {{ $userVisits->links() }}
                     </div>
                 </div>

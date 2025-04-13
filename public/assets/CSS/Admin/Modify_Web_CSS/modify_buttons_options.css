@@ -1,0 +1,61 @@
+.Modifications_Options {
+    display: flex;
+    gap: 20px;
+}
+
+.mod-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: rgb(95, 84, 33);
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    color: var(--Default-color);
+    font-size: 16px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.mod-btn i {
+    font-size: 20px;
+}
+
+.mod-btn:hover {
+    background-color: rgb(189, 160, 34);
+    transform: scale(1.05);
+}
+
+.mod-btn:active {
+    background-color: rgb(243, 202, 18);
+    transform: scale(0.95);
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 520px){
+    .custom-button{
+        width: 100%;
+
+    }
+}
+
+@media (max-width: 435px){
+    .Modifications_Options{
+        display: block;
+    }
+    .Modifications_Options button{
+        margin-top: 8px;
+        width: 100%;
+    }
+}
+
+

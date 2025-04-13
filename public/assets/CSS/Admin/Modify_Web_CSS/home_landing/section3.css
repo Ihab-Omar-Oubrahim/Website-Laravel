@@ -1,0 +1,40 @@
+.section3_images_and_info {
+    border: 1px solid rgba(102, 98, 98, 0.281);
+    background: rgba(51, 50, 50, 0.281);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 15px;
+    gap: 12px;
+}
+
+#textarea_idea{
+    height: 90px;
+    resize: none;
+}
+
+.idea_img_container {
+    display: flex;
+    height: 150px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#idea_img_preview {
+    width: 128px;
+    height: 128px;
+    object-fit: contain;
+    border-radius: 8px;
+    border: 2px solid #555;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+#idea_img_preview:hover {
+    transform: scale(1.049);
+}
+
+#idea_img_preview:active {
+    transform: scale(0.97);
+}

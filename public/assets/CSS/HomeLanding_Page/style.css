@@ -470,6 +470,7 @@ a:hover {
 p {
     color: var(--Default-color);
     text-align: center;
+    line-height: 1.8rem;
 }
 
 .Logo-IF-Con {

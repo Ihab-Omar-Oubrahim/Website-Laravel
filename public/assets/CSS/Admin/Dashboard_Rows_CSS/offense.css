@@ -11,7 +11,7 @@
     padding: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     width: 210px;
-    min-height: 230px;
+    min-height: 245px;
 }
 
 /* Hide the default checkbox */
@@ -133,3 +133,8 @@
     color: white;
     transform: scale(0.9);
 }
+
+#id_tag{
+    font-size: 11px;
+}
+

@@ -1,20 +1,20 @@
 <?php
 
-use App\Http\Controllers\AuthController;
 use App\Http\Controllers\Dashboard;
 use App\Http\Controllers\EditAccountRoutes;
 use App\Http\Controllers\EmailVerificationController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\UserFollowingController;
 use App\Http\Middleware\AdminMiddleware;
-use App\Models\UserFollowing;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Response;
+
 
 require __DIR__ . '/auth.php'; // Auth routes
 require __DIR__ . '/ShareMSG.php'; // Landing Share Message Form
 require __DIR__ . '/Contacts.php'; // User Contact Message Form
 require __DIR__ . '/comment_routes.php'; // Comment routes
-require __DIR__. '/Schools.php'; // School Routes
+require __DIR__ . '/Schools.php'; // School Routes
 require __DIR__ . '/Administrator.php'; // admin routes
 // require __DIR__ . 'Visitors.php'; // Visitors
 
@@ -65,7 +65,7 @@ Route::delete('/UnFollow', [UserFollowingController::class, 'user_unfollowing'])
 
 
 
-// testing
+// offense page //
 
 Route::get('/Error', [Dashboard::class, 'suspended'])->name('Banned');
 
@@ -80,6 +80,13 @@ Route::middleware([AdminMiddleware::class])->group(function () {
         return view('admin.dashboard');
     })->name('admin.dashboard');
 });
+
+
+
+
+
+
+
 
 
 

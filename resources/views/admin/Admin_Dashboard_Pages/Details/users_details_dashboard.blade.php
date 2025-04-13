@@ -1,5 +1,4 @@
 @include('Potato.Layout.headInfo')
-@include('Potato.Tools.SuccessMessage')
 <link rel="stylesheet" href="{{ asset('assets/CSS/Admin/Dashboard_Design/dashboard_rows_design.css') }}">
 <link rel="stylesheet" href="{{ asset('assets/CSS/Admin/Paginator.css') }}">
 <link rel="stylesheet" href="{{ asset('assets/CSS/Admin/pop-up.css') }}">
@@ -29,22 +28,23 @@
                         </div>
                     </div>
 
-                    <!-- Right Section: Search Bar -->
-                    <div class="dashboard_header_right">
-                        <form method="GET" action="{{ route('users.search') }}"
-                            class="search_container form-prevent-multiple-submit" autocomplete="off">
-                            <input type="text" class="search_bar" placeholder="Search by username" name="query"
-                                id="search_bar" />
-                            <button class="search_btn prevent-multiple-submits-search" type="submit" id="searchButton"
-                                data-action="search_sharedMSG" {{-- Data Action Type --}}>
-                                Search
-                                <img src="{{ asset('assets/res/Admin_Res/search.png') }}" alt="Search Icon"
-                                    class="search_icon">
-                                <img src="{{ asset('assets/res/loading.gif') }}" alt="Loading..."
-                                    style="width: 25px; margin-left: 5px; display: none;" class="loading_image" />
-                            </button>
-                        </form>
-                    </div>
+                    <!-- Right Section: Search Bar
+                                                                            <div class="dashboard_header_right">
+                                                                                <form method="GET" action="{{ route('users.search') }}"
+                                                                                    class="search_container form-prevent-multiple-submit" autocomplete="off">
+                                                                                    <input type="text" class="search_bar" placeholder="Search by username" name="query"
+                                                                                        id="search_bar" />
+                                                                                    <button class="search_btn prevent-multiple-submits-search" type="submit" id="searchButton"
+                                                                                        data-action="search_sharedMSG" {{-- Data Action Type --}}>
+                                                                                        Search
+                                                                                        <img src="{{ asset('assets/res/Admin_Res/search.png') }}" alt="Search Icon"
+                                                                                            class="search_icon">
+                                                                                        <img src="{{ asset('assets/res/loading.gif') }}" alt="Loading..."
+                                                                                            style="width: 25px; margin-left: 5px; display: none;" class="loading_image" />
+                                                                                    </button>
+                                                                                </form>
+                                                                            </div>
+                                                                            -->
                 </div>
 
                 <form action="{{ route('dashboard_save_account', ['user' => $user->user_id]) }}" method="POST"
@@ -180,19 +180,35 @@
                         </button>
 
 
+
+
                     </div>
                 </form>
+
+                <div class="Offense_Container">
+                    @if ($user->is_banned)
+                        {{-- Unban user Form  --}}
+                        @include('admin.Confirmations.UnBan_User_Confirmation')
+                    @else
+                        <button class="dashboard-btn ban-btn" type="button"
+                            onclick="openUserBanPopup('{{ $user->user_id }}')">
+                            <i class="fas fa-gavel"></i> Ban User
+                        </button>
+                    @endif
+                </div>
 
             </div>
         </div>
     </div>
 
 
+    @include('admin.Confirmations.Ban_User_Confirmation')
+
     <!-- Popup Modal -->
     <!-- Dark Background Overlay -->
     <div id="popupOverlay" class="overlay hidden" onclick="closePopup()"></div>
 
-    <!-- Popup Modal -->
+    <!-- Popup Modal to modify password or user_id -->
     <div id="popupModal" class="popup hidden">
         <span class="close_btn" onclick="closePopup()">&times;</span>
         <div class="popup_content">

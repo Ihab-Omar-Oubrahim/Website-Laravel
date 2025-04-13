@@ -91,7 +91,7 @@
                 </div>
             </a>
 
-            <a href="{{route('dashboard_offense')}}" style="flex: 1;">
+            <a href="{{ route('dashboard_offense') }}" style="flex: 1;">
                 <div class="dash_info">
                     <img src="{{ asset('assets/res/Admin_Res/sidebar_res/banned.png') }}" alt="Comments" class="dash_icon">
                     <div class="dash_content">
@@ -138,6 +138,38 @@
                 </div>
             </div>
         </div>
+
+        <hr id="line">
+
+        <h3 id="Edit_web_title">Edit Website</h3>
+
+        <div class="Edit_Website">
+            <div class="Edit_Website_Left_Con">
+                <p id="Modify_title">Modify Website text and images</p>
+                <div class="edit_web_img_con">
+                    <img src="{{ asset('assets/res/Admin_Res/sidebar_res/website.png') }}" alt="website">
+                </div>
+
+                <div class="edit_web_btn_con">
+                    <button class="custom_edit_button" onclick="window.location.href='{{ route('modify_website') }}'" type="button">
+                        <span>Edit Content</span>
+                        <img src="{{ asset('assets/res/Admin_Res/icons/edit_web.png') }}" alt="edit web icon">
+                    </button>
+
+                </div>
+
+                <p id="website_edit_desc">
+                    Make quick updates to website content and images. Major structural changes may require
+                    <a href="#">database</a> adjustments.
+                </p>
+
+            </div>
+            <div class="Edit_Website_Right_Con">
+                <img src="{{ asset('assets/res/Admin_Res/edit_website.png') }}" alt="Edit Website">
+            </div>
+        </div>
+
+        {{-- Dashes 3 --}}
 
         @include('admin.Elements.dashboard_footer')
 
