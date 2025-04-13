@@ -1,1 +1,36 @@
-Nothing here atm
+# Laravel Website Project
+
+### 👋 Project by **DrPotato2002** (Ihab Omar Oubrahim)
+
+This Laravel-based website is currently under active development. It features both public-facing user pages and an admin dashboard for content and user management.
+
+---
+
+## 📌 Overview
+
+This project is built using **Laravel 11**, **PHP (latest version)**, and a **MySQL** database.  
+The application includes:
+
+- User authentication (MailTrap integration is in beta)
+- A dynamic dashboard with sections for managing: Contacts,Users,Comments etc...
+
+I’m also currently working on editing the CRM features and enhancing the backend interface. The website is not fully completed yet — it’s around **65% done**.
+
+---
+
+## ⚙️ Requirements
+
+- PHP (8.2+ recommended)
+- Composer
+- Node.js & npm
+- MySQL
+- Laravel 11
+
+---
+
+## 🚀 Installation
+
+1. Clone the repo:
+   ```bash
+   git clone https://github.com/DrPotato2002/your-project-name.git
+   cd your-project-name
